@@ -8,7 +8,9 @@ var express = require('express'),
     // require template engine to display static pages
     engines = require('consolidate'),
     // module to handle errors
-    assert = require('assert');
+    assert = require('assert'),
+    // require/import the mongodb native drivers.
+    mongodb = require('mongodb');
 
 // serve static files, assets, css, javascript in said directory
 app.use(express.static(__dirname + '/public'));
@@ -23,7 +25,7 @@ app.use(bodyParser.json());
 
 // require routes module
 var routes = require('./public/scripts/routes.js');
-routes(app)
+routes(app, mongodb);
 
 // set heroku environment PORT || local PORT
 var port = process.env.PORT || 5000;
