@@ -4,4 +4,4 @@
 <br>
 <p>An API back-end free code camp <a href="https://www.freecodecamp.org/challenges/url-shortener-microservice">project</a>.</p>
 <br>
-<p>Preview <a href="https://glacial-ocean-89581.herokuapp.com/">project</a> here.</p>
+<p>Application has been deprecated, must integrate personal database to make app functional.</p>
